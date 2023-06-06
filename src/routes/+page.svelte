@@ -12,7 +12,7 @@
 	});
 </script>
 
-<div class="bg-left bg-no-repeat bg-cover" style="background-image: url(../left-side.png)">
+<div class="bg-left bg-no-repeat bg-cover" style="background-image: url(../left-side.webp)">
 	<div class="min-h-screen grid lg:grid-cols-2 grid-cols-1">
 		<div class="lg:col-start-2 bg-white col-start-1">
 			<div class="grid grid-rows-3 h-screen grid-flow-col gap-4 container mx-auto px-[100px]">
