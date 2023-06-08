@@ -18,7 +18,7 @@
 		<div class="grid grid-rows-3 h-screen grid-flow-col gap-4 container mx-auto px-[100px]">
 			<div class="col-span-3 row-span-2">
 				<Header />
-				<h1 class="mb-10 font-semibold text-themed-black text-[32px] leading-[42px] max-w-[420px]">
+				<h1 class="mb-[40px] font-semibold text-themed-black text-[32px] leading-[42px] max-w-[420px]">
 					What type of business is the website for?
 				</h1>
 				<Search />

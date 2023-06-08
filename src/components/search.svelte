@@ -46,10 +46,10 @@
 </script>
 
 <div
-	class="relative mb-10 text-gray-600 focus-within:text-gray-400 border border-[#D8DBDE] rounded focus-within:border-[#4253FF] focus-within:shadow-[0px_0px_0px_2px_#E2EBFD]"
+	class="relative mb-[40px] text-gray-600 focus-within:text-gray-400 border border-[#D8DBDE] rounded focus-within:border-[#4253FF] focus-within:shadow-[0px_0px_0px_2px_#E2EBFD]"
 >
-	<span class="absolute inset-y-0 left-0 flex items-center pl-2">
-		<button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
+	<span class="absolute inset-y-0 left-0 flex items-center pl-[16px]">
+		<button type="submit" class="focus:outline-none focus:shadow-outline">
 			<svg
 				width="20"
 				height="20"
@@ -78,16 +78,16 @@
 		type="search"
 		name="q"
 		bind:value={search}
-		class="py-2 text-sm rounded-md pl-12 pr-12 focus:outline-none w-full focus:bg-white focus:text-gray-900"
+		class="py-[10px] text-[16px] leading-[24px] font-normal rounded-md pl-[48px] pr-12 focus:outline-none w-full focus:bg-white focus:text-gray-900"
 		on:click|preventDefault|stopPropagation={openList}
 		placeholder="Search for your industry"
 		autocomplete="off"
 	/>
-	<span class="absolute inset-y-0 right-3 flex items-center pl-2">
+	<span class="absolute inset-y-0 right-[22px] text-[#202123] flex items-center pl-2">
 		<button
 			type="submit"
 			on:click|preventDefault|stopPropagation={toggleList}
-			class="p-1 focus:outline-none focus:shadow-outline"
+			class="focus:outline-none focus:shadow-outline"
 		>
 			<svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path

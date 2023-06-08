@@ -10,9 +10,9 @@
 	});
 </script>
 
-<div class="pb-20 bg-white flex justify-between">
+<div class="pb-[80px] bg-white flex justify-between">
 	<button
-		class="bg-transparent max-h-[44px] text-[#202123] text-[14px]/[1.4] py-[12px] pl-2 pr-[12px] inline-flex items-center border border-[#ECEDEF] rounded"
+		class="bg-transparent max-h-[44px] text-[#202123] text-[14px]/[1.4] py-[12px] pl-2 pr-[12px] inline-flex items-center font-medium leading-[20px] border border-[#ECEDEF] rounded"
 	>
 		<svg
 			class="mr-[6px]"
@@ -35,7 +35,7 @@
 	</button>
 	<button
 		disabled={isDisabled}
-		class="w-[200px] px-[40px] py-[10px] border-none rounded bg-[#4253ff] text-white disabled:bg-[#ecedef] disabled:text-[#8d939a]"
+		class="w-[200px] px-[40px] py-[10px] border-none font-medium leading-[24px] rounded bg-[#4253ff] text-white disabled:bg-[#ecedef] disabled:text-[#8d939a]"
 		>Continue</button
 	>
 </div>

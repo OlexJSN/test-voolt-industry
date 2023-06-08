@@ -14,10 +14,10 @@
 	};
 </script>
 
-<p class="mb-5 font-medium text-[14px] leading-[20px] text-themed-black">
+<p class="mb-[20px] font-medium text-[14px] leading-[20px] text-themed-black">
 	Or select from the most popular:
 </p>
-<div class="flex flex-wrap gap-2">
+<div class="flex flex-wrap gap-x-[4px] gap-y-[8px]">
 	{#each tags as tag}
 		<button
 			on:click={() => select(tag.name)}
@@ -25,7 +25,7 @@
 			class:bg-gray-100={$selected !== tag.name}
 			class="px-4 py-1 border border-[#ecedef] rounded text-[14px]/[1.4] text-[#202123] bg-white hover:bg-[#ebf1ff] hover:text-[#4253ff] hover:border-[#4253ff]"
 		>
-			<span class="text-[14px] whitespace-nowrap font-normal break-keep max-w-full flex-initial">
+			<span class="text-[14px] leading-[20px] whitespace-nowrap font-normal break-keep max-w-full flex-initial">
 				{tag.name}
 			</span>
 		</button>

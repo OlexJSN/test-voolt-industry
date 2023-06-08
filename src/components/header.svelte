@@ -5,7 +5,7 @@
 			<a href="javascript:void(0);" class="flex items-center">
 				<img
 					src="../voolt-logo.svg"
-					class="mr-3 h-6 sm:h-9"
+					class="mr-3 h-[32px] w-[110px]"
 					alt="Voolt Logo"
 				/>
 			</a>
