@@ -115,7 +115,7 @@
 				</button>
 			{/each}
 			{#if items.length === 0}
-				<div class="grid grid-rows-2 grid-flow-col gap-4 p-[30px]">
+				<div class="grid grid-rows-2 grid-flow-col gap-y-[20px] px-[30px] py-[40px]">
 					<svg
 						style="margin-left: auto; margin-right: auto;"
 						width="48"
@@ -168,7 +168,7 @@
 							</clipPath>
 						</defs>
 					</svg>
-					<div class="text-center">
+					<div class="text-center text-[14px]">
 						Oops... We can’t find similar service in our list. <br />
 						Try another keyword to search
 					</div>
