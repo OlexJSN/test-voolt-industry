@@ -12,10 +12,10 @@
 
 <div class="pb-20 bg-white flex justify-between">
 	<button
-		class="bg-transparent text-gray-700 font-semibold py-2 px-4 inline-flex items-center border border-gray-200 rounded"
+		class="bg-transparent max-h-[44px] text-[#202123] text-[14px]/[1.4] py-[12px] pl-2 pr-[12px] inline-flex items-center border border-[#ECEDEF] rounded"
 	>
 		<svg
-			class="  mr-2"
+			class="mr-[6px]"
 			width="20"
 			height="20"
 			viewBox="0 0 20 20"
@@ -35,7 +35,7 @@
 	</button>
 	<button
 		disabled={isDisabled}
-		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 disabled:bg-gray-100 disabled:text-gray-400 disabled:border-0 rounded w-[200px]"
+		class="w-[200px] px-[40px] py-[10px] border-none rounded bg-[#4253ff] text-white disabled:bg-[#ecedef] disabled:text-[#8d939a]"
 		>Continue</button
 	>
 </div>

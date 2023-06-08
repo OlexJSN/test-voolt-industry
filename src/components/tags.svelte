@@ -1,14 +1,12 @@
 <script lang="ts">
 	import { industry } from '../store/industry';
 	import { selected } from '../store/selected';
-	import { chunk } from '../utils';
-	let tags: string[][] = [];
+	let tags: { name: string; services: string[] }[] = [];
 
 	industry.subscribe((data) => {
-		tags = chunk(
-			data.slice(0, 17).map((item) => item.name),
-			3
-		);
+		//I simulate popularity based on existing services in each industry
+		//and limit the quantity to 17 according to the design.
+		tags = data.filter((el) => el.services.length > 20).slice(0, 17);
 	});
 
 	const select = (value: string) => {
@@ -19,23 +17,17 @@
 <p class="mb-5 font-medium text-[14px] leading-[20px] text-themed-black">
 	Or select from the most popular:
 </p>
-<div>
-	{#each tags as row}
-		<div class="flex">
-			{#each row as tag}
-				<button
-					on:click={() => select(tag)}
-					class:bg-blue-100={$selected === tag}
-					class:bg-gray-100={$selected !== tag}
-					class="m-1 font-medium py-1 px-2 bg-white rounded text-gray-700 border hover:bg-blue-100 hover:text-blue-500 hover:outline-none hover:border-blue-300 cursor-pointer"
-				>
-					<span
-						class="text-[14px] leading-[20px] whitespace-nowrap font-normal break-keep leading-none max-w-full flex-initial"
-					>
-						{tag}
-					</span>
-				</button>
-			{/each}
-		</div>
+<div class="flex flex-wrap gap-2">
+	{#each tags as tag}
+		<button
+			on:click={() => select(tag.name)}
+			class:bg-blue-100={$selected === tag.name}
+			class:bg-gray-100={$selected !== tag.name}
+			class="px-4 py-1 border border-[#ecedef] rounded text-[14px]/[1.4] text-[#202123] bg-white hover:bg-[#ebf1ff] hover:text-[#4253ff] hover:border-[#4253ff]"
+		>
+			<span class="text-[14px] whitespace-nowrap font-normal break-keep max-w-full flex-initial">
+				{tag.name}
+			</span>
+		</button>
 	{/each}
 </div>

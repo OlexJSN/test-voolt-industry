@@ -46,7 +46,7 @@
 </script>
 
 <div
-	class="relative mb-10 text-gray-600 focus-within:text-gray-400 border-2 border-gray-40 rounded focus-within:border-blue-500"
+	class="relative mb-10 text-gray-600 focus-within:text-gray-400 border border-[#D8DBDE] rounded focus-within:border-[#4253FF] focus-within:shadow-[0px_0px_0px_2px_#E2EBFD]"
 >
 	<span class="absolute inset-y-0 left-0 flex items-center pl-2">
 		<button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
@@ -78,12 +78,12 @@
 		type="search"
 		name="q"
 		bind:value={search}
-		class="py-2 text-sm rounded-md pl-10 focus:outline-none w-full focus:bg-white focus:text-gray-900"
+		class="py-2 text-sm rounded-md pl-12 pr-12 focus:outline-none w-full focus:bg-white focus:text-gray-900"
 		on:click|preventDefault|stopPropagation={openList}
 		placeholder="Search for your industry"
 		autocomplete="off"
 	/>
-	<span class="absolute inset-y-0 right-0 pr-1 flex items-center pl-2">
+	<span class="absolute inset-y-0 right-3 flex items-center pl-2">
 		<button
 			type="submit"
 			on:click|preventDefault|stopPropagation={toggleList}
@@ -103,12 +103,12 @@
 
 	{#if popupShown}
 		<div
-			class="shadow-md rounded overflow-y-auto max-h-[258px] absolute z-50 bg-white w-full mt-2 text-themed-black"
+			class="shadow-[-10px_4px_24px_0px_rgba(0,0,0,0.08)] px-2 py-1 rounded overflow-y-auto max-h-[258px] absolute z-50 bg-white w-full mt-2 text-themed-black"
 		>
 			{#each items as i}
 				<button
 					on:click|preventDefault|stopPropagation={() => onSelect(i)}
-					class="w-full text-left hover:bg-gray-50 p-[12px] cursor-pointer"
+					class="w-full text-left hover:bg-[#F9FAFA] px-3 py-[10px] mb-[2px] rounded cursor-pointer text-[14px]/[1.4]"
 					class:font-bold={$selected === i}
 				>
 					{i}
