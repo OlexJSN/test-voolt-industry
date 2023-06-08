@@ -108,7 +108,7 @@
 			{#each items as i}
 				<button
 					on:click|preventDefault|stopPropagation={() => onSelect(i)}
-					class="w-full text-left hover:bg-[#F9FAFA] px-3 py-[10px] mb-[2px] rounded cursor-pointer text-[14px]/[1.4]"
+					class="w-full text-left hover:bg-[#F9FAFA] text-[#202123] px-3 py-[10px] mb-[2px] rounded cursor-pointer text-[14px]/[20px]"
 					class:font-bold={$selected === i}
 				>
 					{i}
