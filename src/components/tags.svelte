@@ -22,8 +22,8 @@
 		<button
 			on:click={() => select(tag.name)}
 			class:bg-blue-100={$selected === tag.name}
-			class:bg-gray-100={$selected !== tag.name}
-			class="px-4 py-1 border border-[#ecedef] rounded text-[14px]/[1.4] text-[#202123] bg-white hover:bg-[#ebf1ff] hover:text-[#4253ff] hover:border-[#4253ff]"
+			class:bg-white={$selected !== tag.name}
+			class="px-4 py-1 border border-[#ecedef] rounded text-[14px]/[1.4] text-[#202123] hover:bg-[#ebf1ff] hover:text-[#4253ff] hover:border-[#4253ff]"
 		>
 			<span class="text-[14px] leading-[20px] whitespace-nowrap font-normal break-keep max-w-full flex-initial">
 				{tag.name}
